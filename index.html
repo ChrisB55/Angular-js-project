@@ -1,12 +1,16 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body>
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular Project Directory</title>
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="js/controllers.js"></script>
+</head>
+<body>
 
-
-
-
-
-
-<div>
-  <input type="text">
-  <h2>Welcome {{name}}</h2>
+<div ng-controller = "MyController">
+  <h1>{{author.name}}</h1>
+  <p>{{ author.title + ', ' + author.company }}</p>
 </div>
-</body></html>
+</body>
+</html>
